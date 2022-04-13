@@ -1,18 +1,18 @@
-const { truncate } = require("fs/promises");
+const fs = require("fs");
 const inquirer = require("inquirer");
+const generateReadme = require("./src/readmeTemplete");
 const writeFile = require("./utils/generate-README");
 
 const promtUser = () => {
   return inquirer.prompt([
     {
       type: "input",
-      name: "title",
-      message: "README Title: ",
+      name: "Title",
+      message: "Title: (Required)",
       validate: (nameInput) => {
         if (nameInput) {
           return true;
         } else {
-          console.log("README Title:");
           return false;
         }
       },
@@ -20,43 +20,75 @@ const promtUser = () => {
     {
       type: "input",
       name: "Description",
-      message: "Description:",
+      message: "Description: (Required)",
       validate: (descriptionInput) => {
         if (descriptionInput) {
           return true;
         } else {
-          console.log("Description:");
           return false;
         }
       },
     },
     {
       type: "input",
-      name: "install",
-      message: "Installation instructions:",
+      name: "Install",
+      message: "Installation instructions: (Required)",
       validate: (installInput) => {
         if (installInput) {
           return true;
         } else {
-          console.log("Installation instructions:");
           return false;
         }
       },
     },
     {
       type: "input",
-      name: "usage",
-      message: "Usage: ",
+      name: "Usage",
+      message: "Usage: (Required)",
       validate: (usageInput) => {
         if (usageInput) {
           return true;
         } else {
-          console.log("Usage:");
           return false;
         }
       },
     },
+    {
+      type: "input",
+      name: "Credits",
+      message: "Credits:",
+      default: false,
+    },
+    {
+      type: "input",
+      name: "License",
+      message: "License:",
+      default: false,
+    },
+    {
+      type: "input",
+      name: "Badges",
+      message: "Badges:",
+      default: false,
+    },
+    {
+      type: "input",
+      name: "Features",
+      message: "Features:",
+      default: false,
+    },
+    {
+      type: "input",
+      name: "Tests",
+      message: "Tests:",
+    },
   ]);
 };
 
-promtUser();
+promtUser()
+  .then((readmeData) => {
+    writeFile(generateReadme(readmeData));
+  })
+  .catch((err) => {
+    console.log(err);
+  });

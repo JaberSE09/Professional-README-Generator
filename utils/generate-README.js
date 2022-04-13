@@ -1,19 +1,11 @@
 const fs = require('fs');
 
 // writing files
-const writeFile = fileContent => {
-  return new Promise((resolve, reject) => {
-    fs.writeFile('./dist/README.md', fileContent, err => {
-      if (err) {
-        reject(err);
-        return;
-      }
-
-      resolve({
-        ok: true,
-        message: 'README created!'
-      });
-    });
+function writeFile(data) {
+  fs.writeFile('./dist/README.md', data, (err) => {
+      if (err)
+          throw err;
+      console.log('Success! Information transferred to the README!')
   });
 };
 

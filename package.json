@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "inquirer": "^8.2.2",
     "node": "^17.7.2"
   },
   "name": "readme-generator",
   "description": "Create a README File Generator",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

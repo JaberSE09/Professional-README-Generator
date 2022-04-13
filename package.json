@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node": "^17.7.2"
+  },
+  "name": "readme-generator",
+  "description": "Create a README File Generator",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaberSE09/Professional-README-Generator.git"
+  },
+  "author": "Sajid Jaber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaberSE09/Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/JaberSE09/Professional-README-Generator#readme"
+}

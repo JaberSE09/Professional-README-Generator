@@ -8,12 +8,21 @@ const generateReadme = (readmeText) => {
 
 ## Description
 
-${readmeText.Description}
+${readmeText.Description}`
+var toc=`## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+`
+
+
+
+var required2 =`
 ## Installation
 
 ${readmeText.Install}
-
 
 ## Usage
 
@@ -21,8 +30,7 @@ ${readmeText.Usage}
 `;
 
   if (readmeText.Credits) {
-    required += `
-
+    required2 += `
 ## Credits
 
 ${readmeText.Credits}
@@ -30,41 +38,47 @@ ${readmeText.Credits}
   }
 
   if (readmeText.License) {
-    required += `
-
+    required2 += `
 ## License
-${readmeText.License}`;
+
+${readmeText.License}
+`;
   }
 
   if (readmeText.Credits) {
-    required += `
-
+    required2 += `
 ## Badges
 
 ${readmeText.Badges}
+
 `;
+toc +=`- [Badge](#Badge)
+`
   }
 
   if (readmeText.Features) {
-    required += `
-
-## Features
+    required2 += `## Features
 
 ${readmeText.Features}
 `;
+toc +=`- [Features](#Features)
+`
   }
 
   if (readmeText.Tests) {
     {
-      required += `
-
+      required2 += `
 ## Tests
 
 ${readmeText.Tests}
 `;
+toc +=`- [Tests](#Tests)
+`
     }
 
-    return required;
+
+var readme= required+toc+required2
+    return readme;
   }
 };
 

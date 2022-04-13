@@ -56,14 +56,26 @@ const promtUser = () => {
     {
       type: "input",
       name: "Credits",
-      message: "Credits:",
-      default: false,
+      message: "Credits: (Required)",
+      validate: (creditsInput) => {
+        if (creditsInput) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "License",
-      message: "License:",
-      default: false,
+      message: "License: (Required)",
+      validate: (licenseInput) => {
+        if (licenseInput) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
     {
       type: "input",

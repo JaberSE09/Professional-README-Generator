@@ -8,7 +8,9 @@ const generateReadme = (readmeText) => {
 
 ## Description
 
-${readmeText.Description}`
+${readmeText.Description}
+
+`
 var toc=`## Table of Contents
 
 - [Installation](#installation)
@@ -75,6 +77,7 @@ ${readmeText.Tests}
 toc +=`- [Tests](#Tests)
 `
     }
+    
 
 
 var readme= required+toc+required2

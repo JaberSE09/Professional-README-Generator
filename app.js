@@ -80,19 +80,38 @@ const promtUser = () => {
     {
       type: "input",
       name: "Badges",
-      message: "Badges:",
-      default: false,
+      message: "Badges: (Required)",
+      validate: (badgeInput) => {
+        if (badgeInput) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "Features",
-      message: "Features:",
-      default: false,
+      message: "Features: (Required)",
+      validate: (featureInput) => {
+        if (featureInput) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "Tests",
-      message: "Tests:",
+      message: "Tests: (Required)",
+      validate: (testInput) => {
+        if (testInput) {
+          return true;
+        } else {
+          return false;
+        }
+      },
     },
   ]);
 };

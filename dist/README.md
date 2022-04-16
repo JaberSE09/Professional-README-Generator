@@ -1,8 +1,8 @@
-# te
+# Node JS Application
 
 ## Description
 
-test
+This is a Perfessional Readme file that uses node js and command line
 
 ## Table of Contents
 
@@ -16,28 +16,28 @@ test
 
 ## Installation
 
-test
+git clone the repo and then run node app
 
 ## Usage
 
-t
+The app uses the command line to get the input from the user and then puts it into a readme file in dist
 
 ## Credits
 
-t
+Sajid Jaber
 
 ## License
 
-tt
+MIT 
 
 ## Badges
 
-t
+Sajid Jaber
 
 ## Features
 
-t
+Readme Generator
 
 ## Tests
 
-t
+none

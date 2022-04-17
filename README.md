@@ -24,6 +24,7 @@ First run
 node app
 and go through the promts to get the user input and then it creates the readme file in the dist folder
 
+<video src='./assets/images/Untitled_ Apr 16, 2022 1_44 PM.mp4' width=800px />
 
 
 ## Credits

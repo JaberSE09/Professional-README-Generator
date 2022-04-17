@@ -20,12 +20,11 @@ run node app
 
 ## Usage
 
-First run 
+First run
 node app
 and go through the promts to get the user input and then it creates the readme file in the dist folder
 
-<video src='./assets/images/Untitled_ Apr 16, 2022 1_44 PM.mp4' width=800px />
-
+<video src='./assets/images/demo.mp4' width=800 />
 
 ## Credits
 
@@ -59,4 +58,4 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Go the extra mile and write tests for your application. Then provide examples on how to run them here

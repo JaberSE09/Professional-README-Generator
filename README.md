@@ -24,7 +24,8 @@ First run
 node app
 and go through the promts to get the user input and then it creates the readme file in the dist folder
 
-<video src='./assets/images/demo.mp4' width=800 />
+https://user-images.githubusercontent.com/15232220/163736508-60f26ae6-ba2d-4fc2-8fb0-3785cca1a9db.mp4
+
 
 ## Credits
 
@@ -37,6 +38,9 @@ If you followed tutorials, include links to those here as well.
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+
+
+
 
 ---
 

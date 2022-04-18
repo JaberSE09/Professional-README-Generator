@@ -1,4 +1,4 @@
-# t
+# node js app
 
   ![badge](https://img.shields.io/badge/license-apache-blue)
 
@@ -14,15 +14,15 @@
 
 ## Description
 
-t
+creates a readme file
 
 ## Installation
 
-t
+clone repo and run node app
 
 ## Usage
 
-t
+user input to gnerate a readme file
 
 ## License
 
@@ -33,6 +33,6 @@ t
 
 Please contact me using the following links:
 
-[GitHub](https://github.com/t)
+[GitHub](https://github.com/jaberse09)
 
-[Email: t](mailto:t)
+[Email: sajidjaber@yahoo.com](mailto:sajidjaber@yahoo.com)

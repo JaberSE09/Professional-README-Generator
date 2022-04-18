@@ -72,4 +72,4 @@ SOFTWARE.
 
 ## Features
 
-Table of index
+Table of content

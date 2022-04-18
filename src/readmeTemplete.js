@@ -1,27 +1,66 @@
-var required;
+
+//gets the license toc ready and returns it
+function renderLicenseTOC(license) {
+  if (license !== "no license") {
+    return `- [License](#license)`;
+  } else {
+    return " ";
+  }
+}
+
+//Sets the badge for the readme
+function renderLicenseBadge(license) {
+  if (license !== "no license") {
+    return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
+  } else {
+    return " ";
+  }
+}
+
+//license section display
+function renderLicenseSection(license) {
+  if (license !== "no license") {
+    return `## License
+
+  The application is covered under the following license:
+  ${renderLicenseLink(license)}`;
+  } else {
+    return " ";
+  }
+}
+
+//sets the link to the license
+function renderLicenseLink(license) {
+  if (license !== "no license") {
+    return `[${license}](https://choosealicense.com/licenses/${license})`;
+  } else {
+    return " ";
+  }
+}
+
 const generateReadme = (readmeText) => {
   if (!readmeText) {
-    return "";
+    return " ";
   }
 
-  required = `# ${readmeText.Title}
+  var required = `# ${readmeText.Title}
+
+  ${renderLicenseBadge(readmeText.License)}
+
+## Table-of-Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+${renderLicenseTOC(readmeText.license)}
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description
 
 ${readmeText.Description}
 
-`
-var toc=`## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-`
-
-
-
-var required2 =`
 ## Installation
 
 ${readmeText.Install}
@@ -29,60 +68,18 @@ ${readmeText.Install}
 ## Usage
 
 ${readmeText.Usage}
+
+${renderLicenseSection(readmeText.License)}
+
+## Questions
+
+Please contact me using the following links:
+
+[GitHub](https://github.com/${readmeText.Github})
+
+[Email: ${readmeText.Email}](mailto:${readmeText.Email})
 `;
-
-  if (readmeText.Credits) {
-    required2 += `
-## Credits
-
-${readmeText.Credits}
-`;
-  }
-
-  if (readmeText.License) {
-    required2 += `
-## License
-
-${readmeText.License}
-`;
-  }
-
-  if (readmeText.Credits) {
-    required2 += `
-## Badges
-
-${readmeText.Badges}
-
-`;
-toc +=`- [Badge](#Badge)
-`
-  }
-
-  if (readmeText.Features) {
-    required2 += `## Features
-
-${readmeText.Features}
-`;
-toc +=`- [Features](#Features)
-`
-  }
-
-  if (readmeText.Tests) {
-    {
-      required2 += `
-## Tests
-
-${readmeText.Tests}
-`;
-toc +=`- [Tests](#Tests)
-`
-    }
-    
-
-
-var readme= required+toc+required2
-    return readme;
-  }
+  return required;
 };
 
 module.exports = generateReadme;

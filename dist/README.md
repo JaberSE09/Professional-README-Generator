@@ -1,43 +1,38 @@
-# Node JS Application
+# t
+
+  ![badge](https://img.shields.io/badge/license-apache-blue)
+
+## Table-of-Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Description
 
-This is a Perfessional Readme file that uses node js and command line
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-- [Badge](#Badge)
-- [Features](#Features)
-- [Tests](#Tests)
+t
 
 ## Installation
 
-git clone the repo and then run node app
+t
 
 ## Usage
 
-The app uses the command line to get the input from the user and then puts it into a readme file in dist
-
-## Credits
-
-Sajid Jaber
+t
 
 ## License
 
-MIT 
+  The application is covered under the following license:
+  [apache](https://choosealicense.com/licenses/apache)
 
-## Badges
+## Questions
 
-Sajid Jaber
+Please contact me using the following links:
 
-## Features
+[GitHub](https://github.com/t)
 
-Readme Generator
-
-## Tests
-
-none
+[Email: t](mailto:t)

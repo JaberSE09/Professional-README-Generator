@@ -66,33 +66,15 @@ const promtUser = () => {
       },
     },
     {
-      type: "input",
-      name: "License",
-      message: "License: (Required)",
-      validate: (licenseInput) => {
-        if (licenseInput) {
-          return true;
-        } else {
-          return false;
-        }
-      },
+      type: 'list',
+      name: 'License',
+      message: 'License:',
+      choices: ['agpl', 'apache', 'mit', 'no license']
     },
     {
       type: "input",
-      name: "Badges",
-      message: "Badges: (Required)",
-      validate: (badgeInput) => {
-        if (badgeInput) {
-          return true;
-        } else {
-          return false;
-        }
-      },
-    },
-    {
-      type: "input",
-      name: "Features",
-      message: "Features: (Required)",
+      name: "Tests",
+      message: "Tests: (Required)",
       validate: (featureInput) => {
         if (featureInput) {
           return true;
@@ -103,15 +85,27 @@ const promtUser = () => {
     },
     {
       type: "input",
-      name: "Tests",
-      message: "Tests: (Required)",
-      validate: (testInput) => {
-        if (testInput) {
+      name: "Github",
+      message: "Github: (Required)",
+      validate: (gitInput) => {
+        if (gitInput) {
           return true;
         } else {
           return false;
         }
+      }
       },
+      {
+        type: "input",
+        name: "Email",
+        message: "Email: (Required)",
+        validate: (emailInput) => {
+          if (emailInput) {
+            return true;
+          } else {
+            return false;
+          }
+        },
     },
   ]);
 };

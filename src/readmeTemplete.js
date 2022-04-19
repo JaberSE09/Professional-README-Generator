@@ -38,6 +38,7 @@ function renderLicenseLink(license) {
   }
 }
 
+//Generates the Readme file text
 const generateReadme = (readmeText) => {
   if (!readmeText) {
     return " ";
@@ -83,6 +84,9 @@ Please contact me using the following links:
 
 [Email: ${readmeText.Email}](mailto:${readmeText.Email})
 `;
+
+
+//Returned string for the text of readme
   return required;
 };
 

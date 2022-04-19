@@ -1,8 +1,10 @@
+//global
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateReadme = require("./src/readmeTemplete");
 const writeFile = require("./utils/generate-README");
 
+//function that takes in the input from user
 const promtUser = () => {
   return inquirer.prompt([
     {
@@ -110,6 +112,7 @@ const promtUser = () => {
   ]);
 };
 
+//runs the funtion then gets data and writes to a file in dist folder else display error
 promtUser()
   .then((readmeData) => {
     writeFile(generateReadme(readmeData));

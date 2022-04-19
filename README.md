@@ -24,10 +24,7 @@ First run
 node app
 and go through the promts to get the user input and then it creates the readme file in the dist folder
 
-
-
-https://user-images.githubusercontent.com/15232220/163860381-bf54354a-df86-413f-b96a-72818f62d5f9.mp4
-
+https://user-images.githubusercontent.com/15232220/163907240-4162a5ea-ff7b-43ce-905d-0408b6e1ffdf.mp4
 
 The video askes for:
     -Title

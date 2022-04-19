@@ -38,7 +38,7 @@ The video askes for:
     -Tests
     -Github Username
     -Email
-    
+
 Then puts it all in README.md in the dist folder
 
 ## Credits

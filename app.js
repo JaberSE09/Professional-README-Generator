@@ -75,8 +75,8 @@ const promtUser = () => {
       type: "input",
       name: "Tests",
       message: "Tests: (Required)",
-      validate: (featureInput) => {
-        if (featureInput) {
+      validate: (testInput) => {
+        if (testInput) {
           return true;
         } else {
           return false;
@@ -86,7 +86,7 @@ const promtUser = () => {
     {
       type: "input",
       name: "Github",
-      message: "Github: (Required)",
+      message: "Github Username: (Required)",
       validate: (gitInput) => {
         if (gitInput) {
           return true;

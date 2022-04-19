@@ -12,6 +12,8 @@ What I learned is how to grab input from a user through command line and take th
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Badge](#Badge)
+- [Features](#Features)
 
 ## Installation
 

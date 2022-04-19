@@ -1,6 +1,6 @@
-# node js app
+# Node JS  App
 
-  ![badge](https://img.shields.io/badge/license-apache-blue)
+  ![badge](https://img.shields.io/badge/license-agpl-blue)
 
 ## Table-of-Contents
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-creates a readme file
+Readme Generator from command line
 
 ## Installation
 
@@ -22,12 +22,16 @@ clone repo and run node app
 
 ## Usage
 
-user input to gnerate a readme file
+creates a readme file in the dist folder
 
 ## License
 
   The application is covered under the following license:
-  [apache](https://choosealicense.com/licenses/apache)
+  [agpl](https://choosealicense.com/licenses/agpl)
+
+## Tests
+
+testing the results
 
 ## Questions
 

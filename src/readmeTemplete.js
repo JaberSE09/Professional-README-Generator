@@ -71,6 +71,10 @@ ${readmeText.Usage}
 
 ${renderLicenseSection(readmeText.License)}
 
+## Tests
+
+${readmeText.Tests}
+
 ## Questions
 
 Please contact me using the following links:

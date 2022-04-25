@@ -112,7 +112,7 @@ const promtUser = () => {
   ]);
 };
 
-//runs the funtion then gets data and writes to a file in dist folder else display error
+//runs the function then gets data and writes to a file in dist folder else display error
 promtUser()
   .then((readmeData) => {
     writeFile(generateReadme(readmeData));

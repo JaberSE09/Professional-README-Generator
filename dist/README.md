@@ -1,4 +1,4 @@
-# Node JS  App
+# Node JS App
 
   ![badge](https://img.shields.io/badge/license-agpl-blue)
 
